@@ -11,7 +11,13 @@ export interface TodoState {
 }
 
 const initialState: TodoState = {
-  todos: [],
+  todos: [
+    {
+      title: 'Make todo app',
+      description: 'To practice Reduxjs',
+      complete: false,
+    },
+  ],
 };
 
 export const todoSlice = createSlice({
